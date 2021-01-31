@@ -82,8 +82,8 @@
         <div class="col">
             <form action="send_invitation" method = "post">
                 <div class="form-group">
-                    <label for="email">Email того, кого хочу пригласить</label>
-                    <input type="email" class="form-control" placeholder="Введите email" id="email" name="email">
+                    <label for="email">E-mail того, кого хочу пригласить</label>
+                    <input type="email" class="form-control" placeholder="Введите e-mail адрес" id="email" name="email">
                 </div>
                 <input type="hidden" name="eventId" value="${event.eventId}" />
                 <input type="hidden" name="_csrf" value="${_csrf.token}" />

@@ -139,7 +139,7 @@ public class EventServiceImpl implements EventService {
             for (User user : userSet) {
                 final String message = String.format(
                         "Привет! \n" +
-                                "Произошла жеребьевка ивента под названием:: %s. \n" +
+                                "Произошла жеребьевка ивента под названием: %s. \n" +
                                 "Для просмотра результатов перейди по ссылке: " +
                                 "http://localhost:8080/event/%s \n" +
                                 "и нажми на кнопку \"Результаты жеребьевки\"",

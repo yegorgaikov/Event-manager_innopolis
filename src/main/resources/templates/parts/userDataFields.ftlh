@@ -1,8 +1,8 @@
     <div class="form-group">
-        <label for="inputEmail">Email*</label>
+        <label for="inputEmail">E-mail*</label>
         <input type="email" name="email" id="inputEmail"
                class="form-control  ${(emailError??)?string('is-invalid', '')}"
-               placeholder="Введите ваш Email" required autofocus
+               placeholder="Введите ваш e-mail" required autofocus
                value="<#if user??>${user.email}</#if><#if userToSave??>${userToSave.email}</#if><#if emailValue??>${emailValue}</#if>"
         >
         <#if emailError??>

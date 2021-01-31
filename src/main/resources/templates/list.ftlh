@@ -5,8 +5,8 @@
         <thead>
         <tr>
             <th>E-mail</th>
-            <th>Name</th>
-            <th>Role</th>
+            <th>Имя</th>
+            <th>Роль</th>
             <th></th>
         </tr>
         </thead>
@@ -17,7 +17,7 @@
                     <td>${user.email}</td>
                     <td>${user.username}</td>
                     <td><#list user.roles as role>${role}<#sep>, </#list></td>
-                    <td><a href="/user/${user.userId}">edit user</a></td>
+                    <td><a href="/user/${user.userId}">изменить</a></td>
                 </tr>
             </#if>
         </#list>

@@ -11,7 +11,7 @@
                             <div class="form-group row">
                                 <div class="col-sm-11">
                                     <label class="col-sm-12 col-form-label">Название ивента:</label>
-                                    <input type="text" name="eventName" class="form-control" placeholder="Event name" />
+                                    <input type="text" name="eventName" class="form-control" placeholder="Введите название ивента" />
                                     <label class="col-sm-12 col-form-label">Дата проведения ивента:</label>
                                     <input type="datetime-local" name="eventDate" class="form-control" placeholder="Event Date"/>
                                     <label class="col-sm-12 col-form-label">Дата проведения жеребьевки:</label>
@@ -34,8 +34,8 @@
                             <div class="col-sm-11">
                                 <form class="form-signin">
                                     <div class="form-label-group">
-                                        <label class="col-sm-12 col-form-label" for="inputEmail">Email участника</label>
-                                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+                                        <label class="col-sm-12 col-form-label" for="inputEmail">Введите e-mail участника</label>
+                                        <input type="email" id="inputEmail" class="form-control" placeholder="E-mail адрес" required="" autofocus="">
                                     </div>
                                     <h4></h4>
                                     <button class="btn btn-lg btn-primary btn-block" onclick="getInputValue()" type="submit">Добавить участника</button>
@@ -50,7 +50,7 @@
                             <thead class="thead-dark">
                             <tr>
                                 <th scope="col">ID</th>
-                                <th scope="col">Email</th>
+                                <th scope="col">E-mail</th>
                                 <th scope="col"/>
                             </tr>
                             </thead>
@@ -102,7 +102,7 @@
             let btSave = document.createElement("button");
             btSave.setAttribute("type", "button");
             btSave.setAttribute("class", "btn btn-danger btn-sm");
-            btSave.appendChild(document.createTextNode("Save"));
+            btSave.appendChild(document.createTextNode("Сохр."));
             btSave.addEventListener("click", function() {
                 save(i, mail.value)
             });
@@ -141,14 +141,14 @@
                 let bt = document.createElement("button");
                 bt.setAttribute("type", "button");
                 bt.setAttribute("class", "btn btn-danger btn-sm");
-                bt.appendChild(document.createTextNode("Delete"));
+                bt.appendChild(document.createTextNode("Удалить"));
                 bt.addEventListener("click", function() {
                     deleteRow(i)
                 });
                 let btEdit = document.createElement("button");
                 btEdit.setAttribute("type", "button");
                 btEdit.setAttribute("class", "btn btn-danger btn-sm");
-                btEdit.appendChild(document.createTextNode("Update"));
+                btEdit.appendChild(document.createTextNode("Изменить"));
                 btEdit.addEventListener("click", function() {
                     update(th1, i, th, invitations[i])
                 });
