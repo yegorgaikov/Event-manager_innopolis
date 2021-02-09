@@ -239,24 +239,4 @@ public class EventServiceImpl implements EventService {
             }
         }
     }
-
-
-    /**
-     * Метод исключительно для тестирования!!!! Удалить после всех тестов.
-     *
-     * @param countUser
-     * @param event
-     * @return
-     */
-    @Override
-    public Set<User> createUserList(int countUser, Event event) {
-        List<User> users = new ArrayList<>();
-        for (int i = 0; i < countUser; i++) {
-            users.add(i, new User("user" + i, "123" + i, true, "hjf@jgj" + i + ".com", "+711111111" + i,
-                    null, new HashSet<>(Collections.singletonList(Role.USER))));
-        }
-        return new HashSet<>(users);
-    }
-
-
 }
