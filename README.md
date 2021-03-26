@@ -1,11 +1,21 @@
-# Introduction 
+# Учебный проект
+курса "Разработчик ПО с применением Java EE" Университета Иннополис по созданию приложения "Event-manager" - гибкой и удобной платформы для организации различных мероприятий.
 
-# User manuals
-- Liquibase [goto](https://docs.liquibase.com/home.html)
-- Freemarker [goto](https://freemarker.apache.org/docs/index.html)
-- Spring [goto](https://spring.io/guides)
-- Heroku [goto](https://devcenter.heroku.com/)
-- Docker [goto](https://docs.docker.com/)
-- Docker-Hub [goto](https://hub.docker.com/)
+## Возможности сервиса: 
+1) Создание ивентов (событий) для участников и команд
+2) Гибкая настройка состава участников и команд в ивенте
+3) Приглашение пользователей на ивент по e-mail
+4) Проведение жеребьевки среди участников и команд как вручную, так и автоматически
+5) Уведомление участников о результатах жеребьевки по e-mail и в личном кабинете
 
-# Authors
+## Использованные технологии: 
+Java 8
+Spring Boot
+Maven
+PostgreSQL
+Hibernate
+Liquibase 
+Freemarker
+Bootstrap
+Docker
+Tomcat
